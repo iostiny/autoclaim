@@ -7,9 +7,14 @@ The sript will help you claim your ENU coins once a day. It gets executed once a
 day by cron and it stays in a loop checking if the claim is possible. After it's
 done all tokens from your wallet get staked automatically 50% to CPU and 50% to
 network.
+
+And if you want to distribute your rewards with your friends, the script could help
+to do it according to distrubute_ratio and who's votes weight aganist your node.
+
 # How to use it
 ## Script configuration. You have some variables that needs to be changed inside the script and I will describe them below:
 - wallet: Your wallet name. If you have not specified any you should use: default
+- walletForDistribution: Your distribution wallet. 
 - enucli: is your wallet binary followed by your node or a public node. You should use absolute path to your enucli binary that it is compiled with the the rest of the software. Follow my example.
 - keep: should be substracted from the claimed tokens. The rest will be automatically staken 50% / 50% for CPU / NET. If you want to keep them all in your wallet just configure it with a value higher than your regular claim. 1000 for instance.
 - bot_token: represents your bot ID. IF you want to use my bot just ping me and I will share the details with you. If not you can simply create your own bot. To do so you simply start a chat with @BotFather that will guide you thru the process. After the bot it is created configure your bot settings for inline mode. Hit Bot Settings -> Inline mode -> Turn inline mode on.

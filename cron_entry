@@ -1,4 +1,4 @@
 # AUTOCLAIM enu
 # <minute> <hour> <day> <month> <day of week> <command>
-# the script gets executed everyday at 11:03 AM
-3 11 * * * /path/to/autoclaim.sh <password> BPUsername
+# the script gets executed everyday at 00:33 AM
+34 0 * * * /root/autoclaim/autoclaim.sh <YourMainWalletPwd> <BPAccount> <YourSecondWalletPwd>
