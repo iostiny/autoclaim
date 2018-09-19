@@ -163,7 +163,7 @@ while [[ ${st} -ne 0 ]]; do
       # Lock your wallet.
       ${enucli} wallet lock -n iostinylenux
       if [[ $? -eq 0 ]]; then
-        logall "All wallets are locked now"
+        logall "iostinylenux wallet is locked now"
       fi
     fi
     st=0
