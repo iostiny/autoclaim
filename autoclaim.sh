@@ -180,7 +180,7 @@ if [[ $? -ne 0 ]]; then
 fi
 
 # Check if total coin is bigger than zero that claimed.
-if [[ $(echo "${stotal} > 0" | bc) = 1 ]]; then
+if [[ $(echo "${stotal} <= 0" | bc) = 1 ]]; then
   logall "Claim rewards result is ZERO, no distribution this time"
   ${enucli} wallet lock_all
   exit 6
