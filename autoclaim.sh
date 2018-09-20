@@ -195,7 +195,7 @@ if [[ -z ${iostinylenux_total_votes} ]]; then
 fi
 
 # Get each's voting_weight and distribute
-array=(helloworldbp 1234duanlang tcgane1.enu ttyycckk1314 zengming1234)
+array=(accountNameA accountNameB ...)
 distribution_ratio=0.6
 for distributionName in ${array[@]}
 do
